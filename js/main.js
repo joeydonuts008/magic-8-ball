@@ -15,6 +15,7 @@ const answers = [
 const askButton = document.getElementById('askButton');
 const answerDiv = document.getElementById('answer');
 const questionInput = document.getElementById('questionInput');
+const musicButton = document.getElementById('musicButton');
 
 // Add event listener for asking the 8-Ball
 askButton.addEventListener('click', function() {
@@ -37,16 +38,3 @@ askButton.addEventListener('click', function() {
     }, 2000); // Wait 2 seconds before answering
 });
 
-// Christmas Music Toggle
-let musicPlaying = false;
-let audio = new Audio('path/to/your/christmas-music.mp3'); // Add your Christmas music file path here
-
-function toggleMusic() {
-    if (musicPlaying) {
-        audio.pause();
-        musicPlaying = false;
-    } else {
-        audio.play();
-        musicPlaying = true;
-    }
-}

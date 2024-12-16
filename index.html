@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Magic 8-Ball</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+</head>  
 <body>
     <div class="container">
         <h1>🎄 Christmas Magic 8-Ball 🎄</h1>
         <!-- Input field for the question -->
         <input type="text" id="questionInput" placeholder="Ask your Christmas question..." class="question-input">
+        
         <!-- Magic 8-Ball Image -->
         <div class="ball" id="ball">
             <img src="img/8ball.png" alt="Magic 8-Ball" class="magic-ball-image">
-            
         </div>
-        <button id="askButton">Ask the 8-Ball</button>
-        <div id="christmasMusic" class="music"></div>
-    </div>
 
-    <script src="script.js"></script>
+        <!-- Button to ask the Magic 8-Ball -->
+        <button id="askButton">Ask the 8-Ball</button>
+
+        <!-- Div to display the answer -->
+        <div id="answer"></div>
+
+        
+
+    <script src="js/main.js"></script>
 </body>
 </html>
